@@ -1,74 +1,104 @@
-let numero1 = prompt("Qual mês você faz aniversário?")
-
+//let numero1 = prompt("Qual mês você faz aniversário?") 
+let numero1;
 
 let MES = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro",
     "Outubro", "Novembro", "Dezembro"];
 
 
-let Janeiro = 1
-let Fevereiro = 2
-let Março = 3
-let Abril = 4
-let Maio = 5
-let Junho = 6
-let Julho = 7
-let Agosto = 8
-let Setembro = 9
-let Outubro = 10
-let Novembro = 11
-let Dezembro = 12
+function transformarNumeroEmMes(numero) {
 
 
 
-if (numero1 == 1)
-    console.log('janeiro')
-else if (numero1 == 2)
-    console.log('fevereiro')
-if (numero1 == 2)
-    console.log('fervereiro')
-else if (numero1 == 3)
-    console.log('março')
-if (numero1 == 3)
-    console.log('março')
-else if (numero1 == 4)
-    console.log('abril')
-if (numero1 == 4)
-    console.log('abril')
-else if (numero1 == 5)
-    console.log('maio')
-if (numero1 == 5)
-    console.log('maio')
-else if (numero1 == 6)
-    console.log('junho')
-if (numero1 == 6)
-    console.log('junho')
-else if (numero1 == 7)
-    console.log("julho")
-if (numero1 == 7)
-    console.log('julho')
-else if (numero1 == 8)
-    console.log('agosto')
-if (numero1 == 8)
-    console.log("agosto")
-else if (numero1 == 9)
-    console.log('setembro')
-if (numero1 == 9)
-    console.log('setembro')
-else if (numero1 == 10)
-    console.log('outubro')
-if (numero1 == 10)
-    console.log("outubro")
-else if (numero1 == 11)
-    console.log('novembro')
-if (numero1 == 11)
-    console.log(numero1 == 12)
-else if (numero1 == 12)
-    console.log('dezembro')
-if (numero1 == 12)
-    console.log('dezembro')
-else if (numero1 == 13)
-    console.log('janeiro')
+    if (numero == 1)
+        console.log('janeiro')
+    else if (numero == 2)
+        console.log('fevereiro')
+    else if (numero == 3)
+        console.log('março')
+    else if (numero == 4)
+        console.log('abril')
+    else if (numero == 5)
+        console.log('maio')
+    else if (numero == 6)
+        console.log('junho')
+
+    else if (numero == 7)
+        console.log("julho")
+    else if (numero == 8)
+        console.log('agosto')
+    else if (numero == 9)
+        console.log('setembro')
+    else if (numero == 10)
+        console.log("outubro")
+    else if (numero == 11)
+        console.log('novembro')
+    else if (numero == 12)
+        console.log('dezembro')
+    else
+        console.log("erro")
 
 
+}
 
 
+function transformarNumeroEmSemana(numero) {
+    if (numero == 1)
+        return 'domingo'
+    else if (numero == 2)
+        return "segunda"
+    else if (numero == 3)
+        return 'terça'
+    else if (numero == 4)
+        return 'quarta'
+    else if (numero == 5)
+        return 'quinta'
+    else if (numero == 6)
+        return 'sexta'
+    else if (numero == 7)
+        return 'sabado'
+    else return 'erro'
+
+}
+
+function calcular() {
+    let input = document.getElementById('mes')
+    numero1 = input.value
+    transformarNumeroEmMes(numero1)
+    let semana = transformarNumeroEmSemana(numero1)
+    console.log('semana = ',semana)
+}
+
+function soma() {
+    let nu1 = document.getElementById('n1')
+    let nu2 = document.getElementById('n2')
+    let num1= nu1.value
+    let num2 = nu2.value
+    let resultado = parseInt(num1) + parseInt(num2)
+    console.log('soma=',resultado ) 
+}
+
+function dividir() {
+    let nu1 = document.getElementById('n1')
+    let nu2 = document.getElementById('n2')
+    let num1= nu1.value
+    let num2 = nu2.value
+    let resultado = (num1)/(num2)
+    console.log('dividir',resultado ) 
+}
+function subtrair() {
+    let nu1 = document.getElementById('n1')
+    let nu2 = document.getElementById('n2')
+    let num1= nu1.value
+    let num2 = nu2.value
+    let resultado = (num1)-(num2)
+    console.log('dividir',resultado ) 
+}
+
+function multiplicar() {
+    let nu1 = document.getElementById('n1')
+    let nu2 = document.getElementById('n2')
+    let num1= nu1.value
+    let num2 = nu2.value
+    let resultado = (num1)*(num2)
+    console.log('multiplicar',resultado ) 
+}
