@@ -74,7 +74,8 @@ function soma() {
     let num1= nu1.value
     let num2 = nu2.value
     let resultado = parseInt(num1) + parseInt(num2)
-    console.log('soma=',resultado ) 
+    console.log('soma',resultado ) 
+    
 }
 
 function dividir() {
