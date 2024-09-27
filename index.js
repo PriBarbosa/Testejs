@@ -2,7 +2,7 @@ let soma = parseInt(number1) + parseInt(number2);
 let subtracao = (number1) - (number2);
 let divisao = (number1) / (number2);
 let multiplicacao = (number1) * (number2);
-  
+
 
 
 
@@ -13,11 +13,24 @@ function calcular() {
     let operacao = document.getElementById('operação')
     let num1 = nu1.value
     let num2 = nu2.value
-    let resultado = parseInt(num1) + parseInt(num2)
+    let resultado = (num1) * (num2)
 
-
+    if (operacao == "*") {
+        resultado = num1 * num2;
+    }
+    else if (operacao == '-') {
+        resultado = num1 - num2;
+    }
+    else if (operacao == '/') {
+        resultado = num1 / num2;
+    }
+    else if (operacao == '+') {
+        resultado = num1  + num2
+    }
+    
     console.log(resultado)
 
     alert(resultado)
+
 
 }
