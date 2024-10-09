@@ -27,4 +27,6 @@ function calcular() {
 
 
  resultadoTela.innerText= resultado
+
+
 }

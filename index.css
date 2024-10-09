@@ -2,7 +2,7 @@ body{
 background-color:rosybrown;
 text-align: center;
 padding: auto;
-transition:52
-
+transition:52;
+animation:alternate;
 }
 
